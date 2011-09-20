@@ -1,0 +1,3 @@
+Add the following to your user.js file:
+
+user_pref("mailnews.customDBHeaders", "x-hiveminder-due x-priority x-hiveminder-tags x-hiveminder-recordlocator x-hiveminder-group");

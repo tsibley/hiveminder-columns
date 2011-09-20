@@ -1,0 +1,2 @@
+content hiveminder-columns  chrome/content/
+overlay chrome://messenger/content/messenger.xul chrome://hiveminder-columns/content/messenger.xul
