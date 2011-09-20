@@ -7,6 +7,15 @@
     <splitter class="tree-splitter" />
     <treecol id="colHiveminderDue" persist="hidden ordinal width" flex="2"
              label="Due" tooltiptext="Click to sort by the X-Hiveminder-Due header" />
+    <splitter class="tree-splitter" />
+    <treecol id="colHiveminderGroup" persist="hidden ordinal width" flex="2"
+             label="Group" tooltiptext="Click to sort by the X-Hiveminder-Group header" />
+    <splitter class="tree-splitter" />
+    <treecol id="colHiveminderTags" persist="hidden ordinal width" flex="2"
+             label="Tags" tooltiptext="Click to sort by the X-Hiveminder-Tags header" />
+    <splitter class="tree-splitter" />
+    <treecol id="colHiveminderLocator" persist="hidden ordinal width" flex="2"
+             label="Task #" tooltiptext="Click to sort by the X-Hiveminder-RecordLocator header" />
     </treecols>
   </tree>
 </overlay>
