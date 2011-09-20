@@ -1,3 +1,26 @@
-Add the following to your user.js file:
+See Hiveminder headers as columns in your Thunderbird message list.
 
-user_pref("mailnews.customDBHeaders", "x-hiveminder-due x-priority x-hiveminder-tags x-hiveminder-recordlocator x-hiveminder-group");
+To run this extension out of git, simply checkout the repo into
+
+    ~/.thunderbird/default.<random>/extensions/hiveminder-columns@tsibley.net/
+
+and restart Thunderbird.
+
+
+CAVEATS
+
+Unfortunately, you need to tell Thunderbird to index non-standard
+message headers in the local message store, otherwise the values aren't
+available.
+
+By setting the mailnews.customDBHeaders option (in the Advanced Config editor) to
+
+    x-hiveminder-due x-hiveminder-tags x-hiveminder-recordlocator x-hiveminder-group x-priority
+
+You'll make the most useful Hiveminder headers indexed for all new mail.
+Existing mail will not be reindexed unless you remove and readd the mail
+account or manually remove the folder's .msf files under the relevant
+IMAP accounts.
+
+Maybe in the future I'll find a way to have the extension force a
+reindex.
