@@ -17,7 +17,7 @@ By setting the mailnews.customDBHeaders option (in the Advanced Config editor) t
 
     x-hiveminder-due x-hiveminder-tags x-hiveminder-recordlocator x-hiveminder-group x-priority
 
-You'll make the most useful Hiveminder headers indexed for all new mail.
+you'll make the most useful Hiveminder headers indexed for all new mail.
 Existing mail will not be reindexed unless you remove and readd the mail
 account or manually remove the folder's .msf files under the relevant
 IMAP accounts.
