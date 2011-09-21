@@ -46,7 +46,7 @@ function makeColumnHandler(header) {
     }
 }
 
-function onLoad() {
+function registerHandlers() {
     var ObserverService = Components.classes["@mozilla.org/observer-service;1"]
                                     .getService(Components.interfaces.nsIObserverService);
 
@@ -63,4 +63,6 @@ function onLoad() {
     ObserverService.addObserver(CreateDbObserver, "MsgCreateDBView", false);
 }
 
-window.addEventListener("load", onLoad, false);
+// the load event sometimes gets triggered too late with enigmail enabled
+//window.addEventListener("load", onLoad, false);
+registerHandlers();
